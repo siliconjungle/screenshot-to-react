@@ -1,0 +1,69 @@
+{
+  "author": "James Addison",
+  "name": "screenshot-to-code",
+  "displayName": "Screenshot to Code",
+  "description": "Add a screenshot to generate React, CSS, and JS",
+  "version": "0.0.1",
+  "publisher": "james-addison-silicon-jungle",
+  "license": "MIT",
+  "icon": "resources/icon.png",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:screenshotToCode.showView"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "screenshotToCode.showView",
+        "title": "Show Screenshot to Code"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "screenshotToCode.toolView",
+          "name": "Screenshot to Code"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "vscode-test",
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "color-thief-browser": "^2.0.2",
+    "openai": "^4.56.0",
+    "react": "^18.2.0",
+    "react-code-blocks": "^0.1.6",
+    "react-dom": "^18.2.0"
+  }
+}
