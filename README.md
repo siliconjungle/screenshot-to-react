@@ -7,15 +7,19 @@ It also uses Color Thief to extract the color palette from the screenshot and ap
 ## Examples
 
 Twitter card:
+
 <img width="593" alt="Screenshot 2024-08-17 at 8 42 41 PM" src="https://github.com/user-attachments/assets/8eae1549-e64c-4dbd-a727-7332c0ecd730">
 
 Becomes this:
+
 <img width="638" alt="Screenshot 2024-08-17 at 10 03 42 PM" src="https://github.com/user-attachments/assets/d7f0af53-379a-4956-a9e7-a61a86510e69">
 
 Github comment:
+
 <img width="1033" alt="Screenshot 2024-08-17 at 10 04 14 PM" src="https://github.com/user-attachments/assets/d2f771dd-8e4d-4001-a798-b06d7343e77b">
 
 Becomes this:
+
 <img width="830" alt="Screenshot 2024-08-17 at 10 05 47 PM" src="https://github.com/user-attachments/assets/df5f6189-5fab-40de-8d6b-7d450c92fb45">
 
 ## Extension UI
