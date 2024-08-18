@@ -10,6 +10,10 @@
   "engines": {
     "vscode": "^1.92.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siliconjungle/screenshot-to-react"
+  },
   "extensionKind": [
     "ui",
     "workspace"
